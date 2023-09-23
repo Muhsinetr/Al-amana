@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-amana</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Laila:wght@700&family=Noto+Sans+Arabic&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -21,17 +22,27 @@
     </div>
     </div>
     <div class="direction">
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Service</a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Service</a>
     </div>
     <div class="btn_cont">
-        <a class="cnt_btn" href="">Contact Us</a>
+        <a class="cnt_btn" href="#">Contact Us</a>
+        <div onclick="open_menu()" class="menu_bar">
+    </div>
+    <div id="menuBar"  class="menu_section">
+        <div onclick="close_menu()" class="close_btn">
+            <div></div>
+        </div>
+        <div><a href="">Home</a></div>
+        <div><a href="">About us</a></div>
+        <div><a href="">Service</a></div>
+    </div>
     </div>
     </header>
     <div class="center_main" >
         <h1>You Imagination Is Your our limit</h1>
-        <a class="cnt_btn" href="">Contact Us</a>
+        <a class="cnt_btn" href="#">Contact Us</a>
     </div>
 </section>
 <section class="section_2">
@@ -105,10 +116,10 @@
     <div class="part2">
         <div class="btn_abc">
         <div class="s3_btn">
-            <a href=""><div style="background-image: url(Photo/facebook.png);"></div></a>
-            <a href=""><div style="background-image: url(Photo/instagram.png);"></div></a>
-            <a href=""><div style="background-image: url(Photo/twiter.png);"></div></a>
-            <a href=""><div style="background-image: url(Photo/linkedin.png);"></div></a>
+            <a href="#"><div style="background-image: url(Photo/facebook.png);"></div></a>
+            <a href="#"><div style="background-image: url(Photo/instagram.png);"></div></a>
+            <a href="#"><div style="background-image: url(Photo/twiter.png);"></div></a>
+            <a href="#"><div style="background-image: url(Photo/linkedin.png);"></div></a>
         </div>
         <p class="app_hd">Discover our app</p>
         <div class="s3_app">
@@ -134,5 +145,61 @@
     </div>
     </div>
 </section>
+<section class="section_4">
+    <div class="s4_1 center">
+        <div>
+
+        </div>
+    </div>
+    <div class="s4_2">
+        
+        <p>You can easily book your according to your
+            budget hotel by our website.You can easily book your according to your
+            budget hotel by our website.</p>
+    </div>
+    <div class="s4_3">
+        <ul>
+            <li><h3>Lock At</h3></li>
+            <li ><a href="">Home</a></li>
+            <li ><a href="">About Us</a></li>
+            <li ><a href="">Service</a></li>
+        </ul>
+    </div>
+    <div class="s4_4 ">
+        <p>Contact</p>
+        <a href="">
+            <div style="background-image: url(Photo/icons8-phone-50.png);" class="icon"></div>
+            +91 9895221599
+        </a>
+        <a href="">
+            <div style="background-image: url(Photo/icons8-mail-24.png);" class="icon"></div>
+            khkchelary@gmail.com 
+        </a>
+        <a href="">
+            <div style="background-image: url(Photo/icons8-whatsapp-24.png);" class="icon"></div>
+            +91 9746197472
+        </a>
+    </div>
+    <div class="s4_5 center">
+        <hr class="newline">
+        <div class="s3_btn">
+            <a href="#"><div style="background-image: url(Photo/facebook.png);"></div></a>
+            <a href="#"><div style="background-image: url(Photo/instagram.png);"></div></a>
+            <a href="#"><div style="background-image: url(Photo/twiter.png);"></div></a>
+            <a href="#"><div style="background-image: url(Photo/linkedin.png);"></div></a>
+        </div>
+        <p>&#169; Copyright Bedimcode. All rights reserved</p>
+    </div>
+</section>
+<script>
+    var menuBar = document.getElementById("menuBar");
+
+function open_menu(){
+menuBar.style.display = "block";
+}
+function close_menu(){
+    menuBar.style.display = "none"
+}
+</script>
 </body>
 </html>

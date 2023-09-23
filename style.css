@@ -19,6 +19,7 @@ ul{
     background-image: url(Photo/main_image.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
     display: grid;
     grid-template-rows: 15% 85%;
 }
@@ -26,6 +27,7 @@ ul{
     display: grid;
     width: 100%;
     grid-template-columns: 40% 40% 20%;
+    justify-content: space-around;
 }
 .log_cont{
     display: flex;
@@ -64,6 +66,54 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.menu_bar{
+    background-image: url(Photo/menu_bar.png);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    margin-right: 30px;
+}
+.menu_section{
+    height: 220px;
+    width: 50%;
+    background-color: #00A651;
+    margin-top: 182px;
+    float: right;
+    position: absolute;
+    display: none;
+}
+.close_btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+.close_btn div{
+    background-image: url(Photo/close.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    margin: 15px;
+}
+.menu_section > div{
+    text-align: center;
+    margin-bottom: 10px;
+    background: #06060617;
+    padding: 5px;
+}
+.menu_section > div a{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    font-family: var(--nrm_font--);
+}
+.menu_section > div a:hover{
+    color: #c1c1c1;
+}
+
 .cnt_btn{
     color: #ffff;
     font-family: var(--nrm_font--);
@@ -88,7 +138,6 @@ ul{
     font-family: var(--nrm_font--);
     font-weight: bolder;
     font-size: xxx-large;
-    width: 460px;
     margin-bottom: 70px;
     text-shadow: 0px 0px 5px black;
 }
@@ -308,4 +357,107 @@ ul{
     margin-bottom: 1px;
     font-family: var(--nrm_font--);
     font-size: 12px;
+}
+.section_4{
+    width: 100%;
+    height: 500px;
+    background-color: var(--g-colour--);
+    display: grid;
+    grid-template-columns: 1.5fr .5fr 1fr 1fr 1fr;
+    grid-template-rows: 1.25fr 2.5fr 1.5fr;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s4_1{
+    grid-area: 1/1/2/2;
+}
+.s4_2{
+    grid-area: 1/2/2/6;
+}
+.s4_3{
+    grid-area: 2/1/3/3;
+    font-family: var(--nrm_font--);
+    color: #ffff;
+    margin: auto;
+}
+.s4_4{
+    grid-area: 2/3/3/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.s4_5{
+    grid-area: 3/1/4/6;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.s4_1 div{
+    height:50px;    
+    width: 105px;
+    background-image: url(Photo/AL\ Amana.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s4_2 p{
+    font-family: var(--nrm_font--);
+    color: white;
+    margin: 10px;
+    width: fit-content;
+}
+
+.s4_3 h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    
+}
+.s4_3 li a{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px; 
+}
+.s4_3 li{
+    margin-bottom: 7px; 
+}
+.s4_4 p{
+    font-family: var(--nrm_font--);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.s4_4 a{
+    font-family: var(--nrm_font--);
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.s4_5 .s3_btn{
+    justify-content: center;
+}
+.s4_5 .s3_btn a{
+    margin-right: 20px;
+}
+hr.newline{
+    border-top: 1px solid white;
+    width: 80%;
+}
+.s4_5 p{
+    color: white;
+    font-family: var(--nrm_font--);
+    margin-bottom:10px;
+    text-align: center;
 }
