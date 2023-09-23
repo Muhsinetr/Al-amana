@@ -24,6 +24,9 @@
     .sec_4{
         display: block;
     }
+    .center_main h1{
+        width: auto;
+    }
     .btn_cont .cnt_btn{
         display: none;
     }

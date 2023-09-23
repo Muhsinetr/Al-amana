@@ -139,6 +139,7 @@ ul{
     font-weight: bolder;
     font-size: xxx-large;
     margin-bottom: 70px;
+    width: 500px;
     text-shadow: 0px 0px 5px black;
 }
 .center_main a{
