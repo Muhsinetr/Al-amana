@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    padding: 0;
+    margin: 0; 
+}
 :root{
     --nrm_font-- :'Open Sans', sans-serif;
     --g-colour-- : #00A651;
@@ -466,4 +470,81 @@ hr.newline{
     margin-bottom:10px;
     text-align: center;
     font-size: 15px;
+}
+
+
+
+/* //////////////////////second page About us////////////////////// */
+
+
+.au_header{
+    background-color: var(--g-colour--);
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+.directionUS{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.directionUS a{
+    color: white;
+    font-family: var(--nrm_font--);
+    margin-right: 65px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.directionUS a:hover{
+    color: rgb(241, 241, 203);
+    text-shadow: 0px 0px 20px black;
+}
+.main_bd{
+    width: 100%;
+    min-height: 600px;
+    background-image: url(Photo/bc_img.png);
+    background-size: 400px;
+}
+.main_bd{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.icontg{
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.icontg > div{
+    width: 220px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px #877f7f;
+    flex-direction: column;
+    margin: 50px;
+    transition: 0.5s;
+}
+.icontg > div:hover{
+    transform: translate(10px,20px);
+}
+.contact div{
+    width: 150px;
+    height: 135px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact p{
+    font-family: var(--nrm_font--);
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+}
+.nametg p{
+    font-family: var(--nrm_font--);
+    font-size: 35px;
+    font-weight: 700;
+    margin: 50px 10px;
+    text-align: center;
 }
