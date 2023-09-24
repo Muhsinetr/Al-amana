@@ -51,6 +51,9 @@
         width: auto;
         margin: auto;
     }
+    .persons > div{
+        margin-left: 0px;
+    }
 }
 @media(max-width:350px){
     .section_4{
