@@ -23,6 +23,18 @@
         max-width: 90%;
     }
 }
+@media(max-width : 800px){
+    .sec_4{
+        display: block;
+    }
+    .section_3{
+        display: none;
+    }
+    .s3_btn{
+        width: auto;
+        margin: auto;
+    }
+}
 @media(max-width : 650px){
     .direction{
         display: none;
@@ -36,9 +48,7 @@
     .gallery{
         display: none;
     }
-    .sec_4{
-        display: block;
-    }
+    
     .animation h2{
         margin: 40px 0px;
     }
@@ -61,13 +71,6 @@
     .main_header{
         grid-template-columns: 50% 50%;
         background-image: linear-gradient(180deg, #000000bf, transparent);
-    }
-    .section_3{
-        display: none;
-    }
-    .s3_btn{
-        width: auto;
-        margin: auto;
     }
     .persons > div{
         margin-left: 0px;
