@@ -570,7 +570,34 @@ hr.newline{
     background-color:rgb(88, 86, 86);
     color: white;
 }
-
+.main_au{
+    background-image: url(Photo/bc_img.png);
+    padding-top: 80px;
+    background-size: 500px;
+}
+.narration{
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+.contant{
+    flex-direction: column;
+    max-width: 500px;
+}
+.contant h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.contant p{
+    text-align: justify;
+    color: #4A5568;
+}
 .img_nr{
-
+    width: 485px;
+    height: 330px;
+    background-image: url(Photo/about_us1img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 65px;
 }
