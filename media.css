@@ -16,6 +16,12 @@
     .s1 p{
         margin-left: 15px;
     }
+    .img_nr{
+        margin-top: 100px;
+    }
+    .contant{
+        max-width: 90%;
+    }
 }
 @media(max-width : 650px){
     .direction{
@@ -24,8 +30,20 @@
     .directionUS{
         display: none;
     }
+    .animation{
+        display: block;
+    }
+    .gallery{
+        display: none;
+    }
     .sec_4{
         display: block;
+    }
+    .animation h2{
+        margin: 40px 0px;
+    }
+    .abu_header{
+        grid-template-columns: 1fr 1fr;
     }
     .center_main h1{
         width: auto;
@@ -53,6 +71,12 @@
     }
     .persons > div{
         margin-left: 0px;
+    }
+    .img_nr{
+        margin-top: 50px;
+    }
+    .contant h3{
+        margin-top: 0px;
     }
 }
 @media(max-width:350px){

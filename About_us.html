@@ -6,8 +6,9 @@
     <title>About_us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
-<body>
+<body style="background-image: url(Photo/bc_img.png);background-size: 500px;">
     <header class="abu_header">
         <div class="log_cont">
         <div>
@@ -29,7 +30,7 @@
         <div onclick="close_menu()" class="close_btn">
             <div></div>
         </div>
-        <div><a href="">Home</a></div>
+        <div><a href="index.html">Home</a></div>
         <div><a href="About_us.html">About us</a></div>
         <div><a href="">Service</a></div>
     </div>
@@ -72,6 +73,45 @@
                 <div class="img-5"></div>
             </div>
         </div>
+    </section>
+    <section class="animation">
+        <h2>Gallery</h2>
+        <div class="carousel">
+            <div class="carousel_inner">
+               <div class="carousel_item carousel_item__active">
+                  <div style="background-image: url(Photo/galler-1.jpg);" class="carousel_img"></div>
+               </div>
+               <div class="carousel_item">
+                  <div style="background-image: url(Photo/galler-2.jpg);" class="carousel_img"></div>
+               </div>
+               <div class="carousel_item">
+                  <div style="background-image: url(Photo/galler-3.jpg);" class="carousel_img"></div>
+               </div>
+               <div class="carousel_item">
+                  <div style="background-image: url(Photo/galler-4.jpg);" class="carousel_img"></div>
+               </div>
+               <div class="carousel_item">
+                  <div style="background-image: url(Photo/galler-5.jpg);" class="carousel_img"></div>
+               </div>
+            </div>
+      
+            <div class="carousel_indicator">
+               <button class="carousel_dot carousel_dot__active"></button>
+               <button class="carousel_dot"></button>
+               <button class="carousel_dot"></button>
+               <button class="carousel_dot"></button>
+               <button class="carousel_dot"></button>
+            </div>
+      
+            <div class="carousel_control">
+               <button class="carousel_button carousel_button__prev">
+                  <i class="fas fa-chevron-left"></i>
+               </button>
+               <button class="carousel_button carousel_button__next">
+                  <i class="fas fa-chevron-right"></i>
+               </button>
+            </div>
+         </div>
     </section>
     <section class="section_3">
         <div class="part1">
@@ -186,15 +226,6 @@
         </div>
     </div>
     </section>
-    <script>
-        var menuBar = document.getElementById("menuBar");
-    
-    function open_menu(){
-    menuBar.style.display = "block";
-    }
-    function close_menu(){
-        menuBar.style.display = "none"
-    }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
