@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 html{
     padding: 0;
@@ -125,11 +126,11 @@ ul{
     padding: 7px 20px;
     border-radius: 8px;
     font-size: 15px;
+    box-shadow: 0px 0px 10px #696767;
 }
 .cnt_btn:hover{
     background-color: #00833f;
 }
-
 .center_main{
     display: flex;
     align-items: center;
@@ -474,7 +475,7 @@ hr.newline{
 
 
 
-/* //////////////////////second page About us////////////////////// */
+/* //////////////////////Third page Contact us////////////////////// */
 
 
 .au_header{
@@ -547,4 +548,29 @@ hr.newline{
     font-weight: 700;
     margin: 50px 10px;
     text-align: center;
+}
+
+
+
+/* //////////////////////second page About us////////////////////// */
+
+
+
+.abu_header{
+    background-color: var(--g-colour--);
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr ;
+}
+.white{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 15px #fd3737;
+}
+.white:hover{
+    background-color:rgb(88, 86, 86);
+    color: white;
+}
+
+.img_nr{
+
 }
