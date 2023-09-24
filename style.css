@@ -515,7 +515,7 @@ hr.newline{
     flex-wrap: wrap;
 }
 .icontg > div{
-    width: 220px;
+    width: 250px;
     height: 250px;
     background-color: white;
     border-radius: 15px;
@@ -790,7 +790,7 @@ hr.newline{
  .carousel_img{
     display: block;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center;
     width: 100%;
     height: 550px;
