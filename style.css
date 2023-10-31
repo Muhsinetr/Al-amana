@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    /* border: 1px solid red; */
 }
 html{
     padding: 0;
@@ -186,7 +187,8 @@ ul{
 .feature div{
     height: 50px;
     width: 50px;
-    background-image:url(Photo/Vector.png);
+    background-size: contain;
+    background-position: center;
     margin:0px 20px;
     background-repeat: no-repeat;
 
@@ -271,7 +273,6 @@ ul{
 .copyright{
     position: absolute;
     margin-top: 260px;
-    margin-left: 375px;
     color: white;
     font-size: smaller;
     font-family: var(--nrm_font--);
@@ -624,8 +625,8 @@ hr.newline{
     flex-wrap: wrap;
 }
 .persons > div{
-    width: 340px;
-    height: 400px;
+    width: 350px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -639,8 +640,8 @@ hr.newline{
 .person_1 div{
     height: 150px;
     width: 150px;
-    border-radius: 75px;
-    background-size: contain;
+    border-radius: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
@@ -651,6 +652,7 @@ hr.newline{
 .person_1 p{
     margin: 20px;
     text-align: justify;
+    height: 205px;
 }
 
 /* ///////////Galery////////////*/

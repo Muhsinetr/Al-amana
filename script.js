@@ -1,4 +1,5 @@
 var menuBar = document.getElementById("menuBar");
+const mediaQueryList = window.matchMedia("(max-width: 650px)");
 
 function open_menu(){
 menuBar.style.display = "block";
@@ -12,19 +13,22 @@ function close_menu(){
 
 let onSlide = false;
 
-window.addEventListener("load", () => {
-   autoSlide();
+// window.addEventListener("load", () => {
+      mediaQueryList.onchange = (e)=>{
+         if(e.matches){
+            autoSlide();
 
-   const dots = document.querySelectorAll(".carousel_dot");
-   for (let i = 0; i < dots.length; i++) {
-      dots[i].addEventListener("click", () => slide(i));
-   }
-
-   const buttonPrev = document.querySelector(".carousel_button__prev");
-   const buttonNext = document.querySelector(".carousel_button__next");
-   buttonPrev.addEventListener("click", () => slide(getItemActiveIndex() - 1));
-   buttonNext.addEventListener("click", () => slide(getItemActiveIndex() + 1));
-})
+            const dots = document.querySelectorAll(".carousel_dot");
+            for (let i = 0; i < dots.length; i++) {
+               dots[i].addEventListener("click", () => slide(i));
+            }
+         
+            const buttonPrev = document.querySelector(".carousel_button__prev");
+            const buttonNext = document.querySelector(".carousel_button__next");
+            buttonPrev.addEventListener("click", () => slide(getItemActiveIndex() - 1));
+            buttonNext.addEventListener("click", () => slide(getItemActiveIndex() + 1)); 
+         }
+      }
 
 function autoSlide() {
    setInterval(() => {
